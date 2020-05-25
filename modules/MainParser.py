@@ -23,9 +23,9 @@ class FileParser:
 
     def generateTokenLists(self):
         cursor = self.tu.cursor
-        self.recParse(cursor)
+        self.__recParse(cursor)
 
-    def recParse(self, node: clang.cindex.Cursor):
+    def __recParse(self, node: clang.cindex.Cursor):
         currProccessor = self.getProcessor(node.kind)
         processState = BaseProcessor.PARTIALLY_PROCESSED
         if currProccessor is not None:
@@ -35,7 +35,7 @@ class FileParser:
 
         if processState is not BaseProcessor.PROCESSED:
             for i in node.get_children():
-                self.recParse(i)
+                self.__recParse(i)
 
     def getEntities(self):
         return self.functionList

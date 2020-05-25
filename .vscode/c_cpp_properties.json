@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\cygwin\\usr\\include",
+                "C:\\cygwin\\usr\\include\\c++\\v1",
+                "${workspaceFolder}/src/parser/include",
+                "${workspaceFolder}/src/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "C:\\cygwin\\usr\\include",
+                    "C:\\cygwin\\usr\\include\\c++\\v1"
+                ]
+            },
+            "compilerPath": "C:\\cygwin\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x86"
+        }
+    ],
+    "version": 4
+}
